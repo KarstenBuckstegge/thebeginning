@@ -21,7 +21,8 @@ body {
 
 .h1 {
   font-weight: 800;
-  font-size: 32px; }
+  font-size: 32px;
+  color: white; }
 
 .main {
   display: flex;
@@ -44,15 +45,19 @@ body {
 
 .description {
   text-align: right;
-  width: 50%; }
+  width: 50%;
+  color: #c3e9ff; }
 
 .footer {
   width: 100vw;
   padding: 24px 32px;
-  text-align: center; }
+  font-size: 16px;
+  text-align: center;
+  color: #c3e9ff; }
 
 .footer__logo {
-  width: 160px; }
+  width: 160px;
+  margin-top: 24px; }
 
 .search {
   margin-top: 48px;
@@ -65,8 +70,8 @@ body {
   align-items: center;
   height: 64px;
   padding-left: 32px;
-  border-top: 2px solid #9dd7f8;
-  border-bottom: 2px solid #9dd7f8; }
+  border-top: 2px solid #c3e9ff;
+  border-bottom: 2px solid #c3e9ff; }
 
 .search-icon {
   width: 32px;
@@ -86,17 +91,17 @@ body {
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #9dd7f8;
+  color: #c3e9ff;
   opacity: 1;
   /* Firefox */ }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #9dd7f8; }
+  color: #c3e9ff; }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #9dd7f8; }
+  color: #c3e9ff; }
 
 .autoComplete_list {
   position: absolute;
@@ -114,8 +119,8 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 64px;
-  border-bottom: 2px solid #9dd7f8;
-  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 2px solid #c3e9ff;
+  color: #c3e9ff;
   padding-left: 88px;
   padding-right: 32px;
   transition: color 0.3s ease, background 0.3s ease; }
