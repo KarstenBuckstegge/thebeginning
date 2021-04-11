@@ -1,5 +1,8 @@
-$primaryColor: #87c1e2;
+$primary: #87c1e2;
+$primaryLight: #9dd7f8;
 $base: 8px;
+$searchBorder: 2px solid $primaryLight;
+$transition: .3s ease;
 
 *,
 *::before,
@@ -17,20 +20,18 @@ body {
 body {
   font-family: aktiv-grotesk, sans-serif;
   font-weight: 700;
+  font-size: 24px;
   font-style: normal;
 
   display: flex;
   flex-direction: column;
   color: white;
-  background: $primaryColor;
-
-  * + * {
-    margin-top: $base * 2;
-  }
+  background: $primary;
 }
 
 .h1 {
   font-weight: 800;
+  font-size: 32px;
 }
 
 .main {
@@ -47,6 +48,7 @@ body {
   align-items: flex-end;
   width: 100%;
   max-width: 1000px;
+  margin-top: -$base * 5;
 }
 
 .description,
@@ -67,4 +69,92 @@ body {
 
 .footer__logo {
   width: 160px;
+}
+
+
+// ============ SEARCH FIELD =============
+
+$searchHeight: $base * 8;
+$searchPadding: $base * 4;
+$searchIconWidth: $base * 4;
+$searchIconMargin: $base * 3;
+
+.search {
+  margin-top: $base * 6;
+  width: 100%;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $searchHeight;
+  padding-left: $searchPadding;
+  border-top: $searchBorder;
+  border-bottom: $searchBorder;
+}
+
+.search-icon {
+  width: $searchIconWidth;
+  margin-right: $searchIconMargin;
+  cursor: pointer;
+}
+
+.find-country {
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  width: 100%;
+  font-family: inherit;
+  font-size: 32px;
+  color: white;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $primaryLight;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $primaryLight;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $primaryLight;
+}
+
+.autoComplete_list {
+  position: absolute;
+  top: $searchHeight;
+  left: 0;
+  right: 0;
+  max-height: $searchHeight * 4;
+  overflow-y: auto;
+  background: $primary;
+  list-style: none;
+}
+
+.autoComplete_result,
+.no-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $searchHeight;
+  border-bottom: $searchBorder;
+  color: rgba(white, .6);
+  padding-left: $searchPadding + $searchIconWidth + $searchIconMargin;
+  padding-right:$searchPadding;
+
+  transition: color $transition, background $transition;
+
+  &:hover {
+    color: white;
+    background: rgba(white, .2);
+  }
+}
+
+.autoComplete_highlighted {
+  font-weight: 800;
+  color: white;
 }

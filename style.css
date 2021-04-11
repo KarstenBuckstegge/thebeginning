@@ -12,16 +12,16 @@ body {
 body {
   font-family: aktiv-grotesk, sans-serif;
   font-weight: 700;
+  font-size: 24px;
   font-style: normal;
   display: flex;
   flex-direction: column;
   color: white;
   background: #87c1e2; }
-  body * + * {
-    margin-top: 16px; }
 
 .h1 {
-  font-weight: 800; }
+  font-weight: 800;
+  font-size: 32px; }
 
 .main {
   display: flex;
@@ -35,7 +35,8 @@ body {
   justify-content: center;
   align-items: flex-end;
   width: 100%;
-  max-width: 1000px; }
+  max-width: 1000px;
+  margin-top: -40px; }
 
 .description,
 .footer {
@@ -52,3 +53,77 @@ body {
 
 .footer__logo {
   width: 160px; }
+
+.search {
+  margin-top: 48px;
+  width: 100%; }
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding-left: 32px;
+  border-top: 2px solid #9dd7f8;
+  border-bottom: 2px solid #9dd7f8; }
+
+.search-icon {
+  width: 32px;
+  margin-right: 24px;
+  cursor: pointer; }
+
+.find-country {
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  font-family: inherit;
+  font-size: 32px;
+  color: white; }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9dd7f8;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9dd7f8; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #9dd7f8; }
+
+.autoComplete_list {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  max-height: 256px;
+  overflow-y: auto;
+  background: #87c1e2;
+  list-style: none; }
+
+.autoComplete_result,
+.no-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  border-bottom: 2px solid #9dd7f8;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 88px;
+  padding-right: 32px;
+  transition: color 0.3s ease, background 0.3s ease; }
+  .autoComplete_result:hover,
+  .no-result:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.2); }
+
+.autoComplete_highlighted {
+  font-weight: 800;
+  color: white; }
