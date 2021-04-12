@@ -12,7 +12,7 @@ body {
 body {
   font-family: aktiv-grotesk, sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   display: flex;
   flex-direction: column;
@@ -20,8 +20,9 @@ body {
   background: #87c1e2; }
 
 .h1 {
+  margin-bottom: 8px;
   font-weight: 800;
-  font-size: 32px;
+  font-size: 26px;
   color: white; }
 
 .main {
@@ -45,7 +46,6 @@ body {
 
 .description {
   text-align: right;
-  width: 50%;
   color: #c3e9ff; }
 
 .footer {
@@ -58,6 +58,24 @@ body {
 .footer__logo {
   width: 160px;
   margin-top: 24px; }
+
+.exit {
+  display: flex;
+  position: fixed;
+  top: 15vh;
+  left: 0;
+  padding: 24px 16px 24px 32px;
+  transform: translateX(-16px);
+  background: tomato;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease; }
+  .exit:hover, .exit:focus {
+    transform: translateX(0); }
+
+.exit__icon {
+  width: 24px;
+  margin-left: 16px; }
 
 .search {
   margin-top: 48px;

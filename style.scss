@@ -20,7 +20,7 @@ body {
 body {
   font-family: aktiv-grotesk, sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
 
   display: flex;
@@ -30,8 +30,9 @@ body {
 }
 
 .h1 {
+  margin-bottom: $base;
   font-weight: 800;
-  font-size: 32px;
+  font-size: 26px;
   color: white;
 }
 
@@ -59,7 +60,6 @@ body {
 
 .description {
   text-align: right;
-  width: 50%;
   color: $primaryLight;
 }
 
@@ -74,6 +74,28 @@ body {
 .footer__logo {
   width: 160px;
   margin-top: $base * 3;
+}
+
+.exit {
+  display: flex;
+  position: fixed;
+  top: 15vh;
+  left: 0;
+  padding: $base*3 $base*2 $base*3 $base*4;
+  transform: translateX(-#{$base*2});
+  background: tomato;
+  color: white;
+  text-decoration: none;
+  transition: transform $transition;
+
+  &:hover, &:focus {
+    transform: translateX(0);
+  }
+}
+
+.exit__icon {
+  width: $base * 3;
+  margin-left: $base * 2;
 }
 
 
