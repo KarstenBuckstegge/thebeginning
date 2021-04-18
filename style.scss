@@ -1,5 +1,6 @@
 $primary: #87c1e2;
 $primaryLight: #c3e9ff;
+$red: #f37171;
 $base: 8px;
 $searchBorder: 2px solid $primaryLight;
 $transition: .3s ease;
@@ -83,7 +84,7 @@ body {
   left: 0;
   padding: $base*3 $base*2 $base*3 $base*4;
   transform: translateX(-#{$base*2});
-  background: tomato;
+  background: $red;
   color: white;
   text-decoration: none;
   transition: transform $transition;
