@@ -1,5 +1,8 @@
 import { numbers } from './numbers.js';
 
+const inputField = document.querySelector('#autoComplete');
+const actionLink = document.querySelector('.action');
+
 const noResultsMessage = (list, query) => {
   const message = document.createElement('li');
   message.setAttribute('class', 'no-result');
@@ -28,7 +31,7 @@ const config = {
       key: ['name'],
   },
   trigger: {
-		event: ["input", "focus"]
+		event: ["input", "focus"],
 	},
   resultsList: {
     noResults: noResultsMessage,
@@ -39,6 +42,14 @@ const config = {
       render: true,
     },
     content: createItem,
+  },
+  onSelection: (feedback) => {
+    const selectedValue = feedback.selection.value;
+
+    inputField.value = selectedValue.name;
+    actionLink.innerHTML = `CALL<br />${selectedValue.name}: ${selectedValue.action}`;
+    actionLink.setAttribute('href', `tel:${selectedValue.action}`);
+    actionLink.setAttribute('class', 'action');
   },
 }
 const autoCompleteJS = new autoComplete(config);
