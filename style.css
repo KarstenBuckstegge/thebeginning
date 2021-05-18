@@ -46,7 +46,8 @@ body {
 
 .description {
   text-align: right;
-  color: #c3e9ff; }
+  color: #c3e9ff;
+  letter-spacing: 0.05em; }
 
 .footer {
   width: 100vw;
@@ -63,9 +64,9 @@ body {
   display: flex;
   position: fixed;
   top: 15vh;
-  left: 0;
-  padding: 24px 16px 24px 32px;
-  transform: translateX(-16px);
+  right: 0;
+  padding: 24px 32px 24px 16px;
+  transform: translateX(calc(100% - 56px));
   background: #f37171;
   color: white;
   text-decoration: none;
@@ -75,7 +76,7 @@ body {
 
 .exit__icon {
   width: 24px;
-  margin-left: 16px; }
+  margin-right: 16px; }
 
 .search {
   margin-top: 48px;

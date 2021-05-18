@@ -4,6 +4,8 @@ $red: #f37171;
 $base: 8px;
 $searchBorder: 2px solid $primaryLight;
 $transition: .3s ease;
+$exitIconWidth: $base * 3;
+$exitIconMargin: $base * 2;
 
 *,
 *::before,
@@ -62,6 +64,7 @@ body {
 .description {
   text-align: right;
   color: $primaryLight;
+  letter-spacing: 0.05em;
 }
 
 .footer {
@@ -81,9 +84,9 @@ body {
   display: flex;
   position: fixed;
   top: 15vh;
-  left: 0;
-  padding: $base*3 $base*2 $base*3 $base*4;
-  transform: translateX(-#{$base*2});
+  right: 0;
+  padding: $base*3 $base*4 $base*3 $base*2;
+  transform: translateX(#{calc(100% - #{$exitIconMargin*2+$exitIconWidth})});
   background: $red;
   color: white;
   text-decoration: none;
@@ -95,8 +98,8 @@ body {
 }
 
 .exit__icon {
-  width: $base * 3;
-  margin-left: $base * 2;
+  width: $exitIconWidth;
+  margin-right: $exitIconMargin;
 }
 
 
