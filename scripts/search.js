@@ -3,6 +3,8 @@ import { numbers } from './numbers.js';
 const inputField = document.querySelector('#autoComplete');
 const actionLink = document.querySelector('.action');
 
+// AUTOCOMPLETE INIT
+
 const noResultsMessage = (list, query) => {
   const message = document.createElement('li');
   message.setAttribute('class', 'no-result');
@@ -53,3 +55,12 @@ const config = {
   },
 }
 const autoCompleteJS = new autoComplete(config);
+
+
+// AUTOCOMPLETE SLIDE TO TOP
+
+const onOpenResults = (ev) => {
+  document.querySelector('#autoComplete_list').scrollIntoView();
+}
+
+inputField.addEventListener('open', onOpenResults);
