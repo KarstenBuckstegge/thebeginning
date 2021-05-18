@@ -38,7 +38,7 @@ body {
   align-items: flex-end;
   width: 100%;
   max-width: 1000px;
-  margin-top: -40px; }
+  margin-top: -80px; }
 
 .description,
 .footer {
@@ -48,17 +48,6 @@ body {
   text-align: right;
   color: #c3e9ff;
   letter-spacing: 0.05em; }
-
-.footer {
-  width: 100vw;
-  padding: 24px 32px;
-  font-size: 16px;
-  text-align: center;
-  color: #c3e9ff; }
-
-.footer__logo {
-  width: 160px;
-  margin-top: 24px; }
 
 .exit {
   display: flex;

@@ -53,7 +53,7 @@ body {
   align-items: flex-end;
   width: 100%;
   max-width: 1000px;
-  margin-top: -$base * 5;
+  margin-top: -$base * 10;
 }
 
 .description,
@@ -67,18 +67,18 @@ body {
   letter-spacing: 0.05em;
 }
 
-.footer {
-  width: 100vw;
-  padding: $base*3 $base*4;
-  font-size: 16px;
-  text-align: center;
-  color: $primaryLight;
-}
+// .footer {
+//   width: 100vw;
+//   padding: $base*3 $base*4;
+//   font-size: 16px;
+//   text-align: center;
+//   color: $primaryLight;
+// }
 
-.footer__logo {
-  width: 160px;
-  margin-top: $base * 3;
-}
+// .footer__logo {
+//   width: 160px;
+//   margin-top: $base * 3;
+// }
 
 .exit {
   display: flex;
