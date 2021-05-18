@@ -2,6 +2,7 @@ import { numbers } from './numbers.js';
 
 const inputField = document.querySelector('#autoComplete');
 const actionLink = document.querySelector('.action');
+const exitLink = document.querySelector('.exit');
 
 // AUTOCOMPLETE INIT
 
@@ -65,3 +66,9 @@ const onOpenResults = (ev) => {
 }
 
 inputField.addEventListener('open', onOpenResults);
+
+
+// REMOVE PAGE FROM BROWSER HISTORY
+exitLink.addEventListener('click', () => {
+  window.location.replace('http://google.com');
+});

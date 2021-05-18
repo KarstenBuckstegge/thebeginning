@@ -77,6 +77,10 @@ body {
   background: #f37171;
   color: white;
   text-decoration: none;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  cursor: pointer;
   transition: transform 0.3s ease; }
   .exit:hover, .exit:focus {
     transform: translateX(0); }

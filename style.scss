@@ -125,6 +125,10 @@ body {
   background: $red;
   color: white;
   text-decoration: none;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  cursor: pointer;
   transition: transform $transition;
 
   &:hover, &:focus {
