@@ -76,7 +76,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
+  height: 56px;
   padding-left: 32px;
   border-top: 2px solid #c3e9ff;
   border-bottom: 2px solid #c3e9ff; }
@@ -94,7 +94,7 @@ body {
   box-shadow: none;
   width: 100%;
   font-family: inherit;
-  font-size: 32px;
+  font-size: 26px;
   color: white; }
 
 ::placeholder {
@@ -113,10 +113,10 @@ body {
 
 .autoComplete_list {
   position: absolute;
-  top: 64px;
+  top: 56px;
   left: 0;
   right: 0;
-  max-height: 256px;
+  max-height: 224px;
   overflow-y: auto;
   background: #87c1e2;
   list-style: none; }
@@ -126,7 +126,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
+  height: 56px;
   border-bottom: 2px solid #c3e9ff;
   color: #c3e9ff;
   padding-left: 88px;

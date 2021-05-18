@@ -105,7 +105,7 @@ body {
 
 // ============ SEARCH FIELD =============
 
-$searchHeight: $base * 8;
+$searchHeight: $base * 7;
 $searchPadding: $base * 4;
 $searchIconWidth: $base * 4;
 $searchIconMargin: $base * 3;
@@ -141,7 +141,7 @@ $searchIconMargin: $base * 3;
 
   width: 100%;
   font-family: inherit;
-  font-size: 32px;
+  font-size: 26px;
   color: white;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
