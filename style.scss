@@ -1,3 +1,4 @@
+// VARS
 $primary: #87c1e2;
 $primaryLight: #c3e9ff;
 $red: #f37171;
@@ -7,6 +8,14 @@ $transition: .3s ease;
 $exitIconWidth: $base * 3;
 $exitIconMargin: $base * 2;
 
+
+// MIXINS
+@mixin media-sm {
+  @media (max-width: 900px) { @content; }
+}
+
+
+// RESETS
 *,
 *::before,
 *::after {
@@ -20,6 +29,9 @@ body {
   min-height: 100vh;
 }
 
+
+// STYLES
+
 body {
   font-family: aktiv-grotesk, sans-serif;
   font-weight: 700;
@@ -30,6 +42,10 @@ body {
   flex-direction: column;
   color: white;
   background: $primary;
+
+  @include media-sm {
+    font-size: 18px;
+  }
 }
 
 .h1 {
@@ -37,6 +53,10 @@ body {
   font-weight: 800;
   font-size: 26px;
   color: white;
+
+  @include media-sm {
+    font-size: 22px;
+  }
 }
 
 .main {
@@ -44,6 +64,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+
+  @include media-sm {
+    align-items: start;
+    padding-top: 25vh;
+  }
 }
 
 .content {
@@ -54,6 +79,12 @@ body {
   width: 100%;
   max-width: 1000px;
   margin-top: -$base * 10;
+
+  @include media-sm {
+    margin-top: 0;
+    width: 80%;
+    align-items: flex-start;
+  }
 }
 
 .description,
@@ -65,6 +96,10 @@ body {
   text-align: right;
   color: $primaryLight;
   letter-spacing: 0.05em;
+
+  @include media-sm {
+    text-align: left;
+  }
 }
 
 // .footer {
@@ -95,6 +130,14 @@ body {
   &:hover, &:focus {
     transform: translateX(0);
   }
+
+  @include media-sm {
+    top: 5vh;
+    height: $exitIconWidth + $base*4;
+    padding: $base*2 $base*1 $base*2 $base*3;
+    transform: translate(0);
+    opacity: .8;
+  }
 }
 
 .exit__icon {
@@ -102,17 +145,30 @@ body {
   margin-right: $exitIconMargin;
 }
 
+.exit__text {
+  @include media-sm {
+    display: none;
+  }
+}
 
-// ============ SEARCH FIELD =============
+
+// SEARCH FIELD
 
 $searchHeight: $base * 7;
 $searchPadding: $base * 4;
 $searchIconWidth: $base * 4;
 $searchIconMargin: $base * 3;
 
+$searchHeight--mobile: $base * 6;
+$searchPadding--mobile: $base;
+
 .search {
   margin-top: $base * 6;
   width: 100%;
+
+  @include media-sm {
+    margin-top: $base * 4;
+  }
 }
 
 .input-wrapper {
@@ -124,12 +180,21 @@ $searchIconMargin: $base * 3;
   padding-left: $searchPadding;
   border-top: $searchBorder;
   border-bottom: $searchBorder;
+
+  @include media-sm {
+    padding: 0 $searchPadding--mobile;
+    height: $searchHeight--mobile;
+  }
 }
 
 .search-icon {
   width: $searchIconWidth;
   margin-right: $searchIconMargin;
   cursor: pointer;
+
+  @include media-sm {
+    display: none;
+  }
 }
 
 .find-country {
@@ -143,6 +208,10 @@ $searchIconMargin: $base * 3;
   font-family: inherit;
   font-size: 26px;
   color: white;
+
+  @include media-sm {
+    font-size: 22px;
+  }
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: $primaryLight;
@@ -183,6 +252,17 @@ $searchIconMargin: $base * 3;
     color: white;
     background: rgba(white, .2);
   }
+
+  @include media-sm {
+    height: $searchHeight--mobile;
+    padding: 0 $searchPadding--mobile;
+  }
+}
+
+.autoComplete_result__number {
+  @include media-sm {
+    text-align: right;
+  }
 }
 
 .autoComplete_highlighted {
@@ -207,6 +287,11 @@ $searchIconMargin: $base * 3;
   &:focus {
     background: white;
     color: $primary;
+  }
+
+  @include media-sm {
+    border-width: 2px;
+    font-size: 18px;
   }
 }
 

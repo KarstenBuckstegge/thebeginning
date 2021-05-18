@@ -18,18 +18,28 @@ body {
   flex-direction: column;
   color: white;
   background: #87c1e2; }
+  @media (max-width: 900px) {
+    body {
+      font-size: 18px; } }
 
 .h1 {
   margin-bottom: 8px;
   font-weight: 800;
   font-size: 26px;
   color: white; }
+  @media (max-width: 900px) {
+    .h1 {
+      font-size: 22px; } }
 
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1; }
+  @media (max-width: 900px) {
+    .main {
+      align-items: start;
+      padding-top: 25vh; } }
 
 .content {
   display: flex;
@@ -39,6 +49,11 @@ body {
   width: 100%;
   max-width: 1000px;
   margin-top: -80px; }
+  @media (max-width: 900px) {
+    .content {
+      margin-top: 0;
+      width: 80%;
+      align-items: flex-start; } }
 
 .description,
 .footer {
@@ -48,6 +63,9 @@ body {
   text-align: right;
   color: #c3e9ff;
   letter-spacing: 0.05em; }
+  @media (max-width: 900px) {
+    .description {
+      text-align: left; } }
 
 .exit {
   display: flex;
@@ -62,14 +80,28 @@ body {
   transition: transform 0.3s ease; }
   .exit:hover, .exit:focus {
     transform: translateX(0); }
+  @media (max-width: 900px) {
+    .exit {
+      top: 5vh;
+      height: 56px;
+      padding: 16px 8px 16px 24px;
+      transform: translate(0);
+      opacity: .8; } }
 
 .exit__icon {
   width: 24px;
   margin-right: 16px; }
 
+@media (max-width: 900px) {
+  .exit__text {
+    display: none; } }
+
 .search {
   margin-top: 48px;
   width: 100%; }
+  @media (max-width: 900px) {
+    .search {
+      margin-top: 32px; } }
 
 .input-wrapper {
   position: relative;
@@ -80,11 +112,18 @@ body {
   padding-left: 32px;
   border-top: 2px solid #c3e9ff;
   border-bottom: 2px solid #c3e9ff; }
+  @media (max-width: 900px) {
+    .input-wrapper {
+      padding: 0 8px;
+      height: 48px; } }
 
 .search-icon {
   width: 32px;
   margin-right: 24px;
   cursor: pointer; }
+  @media (max-width: 900px) {
+    .search-icon {
+      display: none; } }
 
 .find-country {
   border: none;
@@ -96,6 +135,9 @@ body {
   font-family: inherit;
   font-size: 26px;
   color: white; }
+  @media (max-width: 900px) {
+    .find-country {
+      font-size: 22px; } }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -136,6 +178,15 @@ body {
   .no-result:hover {
     color: white;
     background: rgba(255, 255, 255, 0.2); }
+  @media (max-width: 900px) {
+    .autoComplete_result,
+    .no-result {
+      height: 48px;
+      padding: 0 8px; } }
+
+@media (max-width: 900px) {
+  .autoComplete_result__number {
+    text-align: right; } }
 
 .autoComplete_highlighted {
   font-weight: 800;
@@ -155,6 +206,10 @@ body {
   .action:hover, .action:focus {
     background: white;
     color: #87c1e2; }
+  @media (max-width: 900px) {
+    .action {
+      border-width: 2px;
+      font-size: 18px; } }
 
 .hidden {
   display: none; }
