@@ -29,7 +29,7 @@ const createItem = (item, parent) => {
 }
 
 const config = {
-  placeHolder: 'Search for your country...',
+  placeHolder: 'Search for country...',
   data: {
       src: numbers,
       key: ['name'],
@@ -62,7 +62,7 @@ const autoCompleteJS = new autoComplete(config);
 // AUTOCOMPLETE SLIDE TO TOP
 
 const onOpenResults = (ev) => {
-  document.querySelector('#autoComplete_list').scrollIntoView();
+  document.querySelector('.search').scrollIntoView();
 }
 
 inputField.addEventListener('open', onOpenResults);

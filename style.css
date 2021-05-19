@@ -101,7 +101,7 @@ body {
     display: none; } }
 
 .search {
-  margin-top: 48px;
+  margin-top: 64px;
   width: 100%; }
   @media (max-width: 900px) {
     .search {
@@ -127,7 +127,8 @@ body {
   cursor: pointer; }
   @media (max-width: 900px) {
     .search-icon {
-      display: none; } }
+      width: 24px;
+      margin-right: 16px; } }
 
 .find-country {
   border: none;

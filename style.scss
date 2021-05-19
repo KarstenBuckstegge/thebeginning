@@ -165,9 +165,10 @@ $searchIconMargin: $base * 3;
 
 $searchHeight--mobile: $base * 6;
 $searchPadding--mobile: $base;
+$searchIconWidth--mobile: $base * 3;
 
 .search {
-  margin-top: $base * 6;
+  margin-top: $base * 8;
   width: 100%;
 
   @include media-sm {
@@ -197,7 +198,8 @@ $searchPadding--mobile: $base;
   cursor: pointer;
 
   @include media-sm {
-    display: none;
+    width: $searchIconWidth--mobile;
+    margin-right: $base * 2;
   }
 }
 
