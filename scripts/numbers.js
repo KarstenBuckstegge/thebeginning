@@ -22,7 +22,7 @@ export const numbers = [
   {
     "name": "Antigua & Barbuda",
     "number": "(268) 463 5555",
-    "action": "(268) 463 5555",
+    "action": "268 463 5555",
  },
   {
     "name": "Argentina",
@@ -47,12 +47,12 @@ export const numbers = [
   {
     "name": "Azerbaijan",
     "number": "493 7039/ 498 0092",
-    "action": "493 7039/ 498 0092",
+    "action": "493 7039",
  },
   {
     "name": "Bahamas",
     "number": "(242) 328 0922",
-    "action": "(242) 328 0922",
+    "action": "242 328 0922",
  },
   {
     "name": "Bahrain",
@@ -67,7 +67,7 @@ export const numbers = [
   {
     "name": "Barbados",
     "number": "(246) 435 8222",
-    "action": "(246) 435 8222",
+    "action": "246 435 8222",
  },
   {
     "name": "Belarus",
@@ -77,7 +77,7 @@ export const numbers = [
   {
     "name": "Belgium",
     "number": "0 800 30030/1712",
-    "action": "0 800 30030/1712",
+    "action": "0 800 30030",
  },
   {
     "name": "Belize",
@@ -92,22 +92,22 @@ export const numbers = [
   {
     "name": "Bhutan",
     "number": "(975) 2 332159/334751",
-    "action": "(975) 2 332159/334751",
+    "action": "975 2 332159",
  },
   {
     "name": "Bolivia",
     "number": "(591 4) 663 8517",
-    "action": "(591 4) 663 8517",
+    "action": "591 4 663 8517",
  },
   {
     "name": "Bosnia & Herzegovina",
     "number": "1264/1265",
-    "action": "1264/1265",
+    "action": "1264",
  },
   {
     "name": "Botswana",
     "number": "(267) 3900516/7659",
-    "action": "(267) 3900516/7659",
+    "action": "267 3900516",
  },
   {
     "name": "Brazil",
@@ -122,7 +122,7 @@ export const numbers = [
   {
     "name": "Bulgaria",
     "number": "02/981 76 86",
-    "action": "02/981 76 86",
+    "action": "981 76 86",
  },
   {
     "name": "Burkina Faso",
@@ -151,8 +151,8 @@ export const numbers = [
  },
   {
     "name": "Chile",
-    "number": " 800 104 008",
-    "action": " 800 104 008",
+    "number": "800 104 008",
+    "action": "800 104 008",
  },
   {
     "name": "China",
@@ -167,7 +167,7 @@ export const numbers = [
   {
     "name": "Cook Islands",
     "number": "(682) 21133",
-    "action": "(682) 21133",
+    "action": "682 21133",
  },
   {
     "name": "Costa Rica",
@@ -197,7 +197,7 @@ export const numbers = [
   {
     "name": "Democratic Republic of the Congo",
     "number": "(267) 220 52 94",
-    "action": "(267) 220 52 94",
+    "action": "267 220 52 94",
  },
   {
     "name": "Denmark",
@@ -212,7 +212,7 @@ export const numbers = [
   {
     "name": "Ecuador",
     "number": "(244) 7347/6945/7649",
-    "action": "(244) 7347/6945/7649",
+    "action": "244 7347",
  },
   {
     "name": "Egypt",
@@ -242,7 +242,7 @@ export const numbers = [
   {
     "name": "Ethiopia",
     "number": "(11) 124 2998/123 0777",
-    "action": "(11) 124 2998/123 0777",
+    "action": "11 124 2998",
  },
   {
     "name": "Fiji",
@@ -252,7 +252,7 @@ export const numbers = [
   {
     "name": "Finland",
     "number": "080 005 005/0800 02400",
-    "action": "080 005 005/0800 02400",
+    "action": "080 005 005",
  },
   {
     "name": "France",
@@ -281,28 +281,28 @@ export const numbers = [
  },
   {
     "name": "Greece",
-    "number": " SOS 15900",
-    "action": " SOS 15900",
+    "number": "SOS 15900",
+    "action": "SOS 15900",
  },
   {
     "name": "Grenada",
     "number": "(473) 440 3788",
-    "action": "(473) 440 3788",
+    "action": "473 440 3788",
  },
   {
     "name": "Guatemala",
     "number": "2285 0100/0139",
-    "action": "2285 0100/0139",
+    "action": "2285 0100",
  },
   {
     "name": "Guyana",
     "number": "(592) 227 3454/225 4731",
-    "action": "(592) 227 3454/225 4731",
+    "action": "592 227 3454",
  },
   {
     "name": "Haiti",
     "number": "(509) 2 45 5174/4221",
-    "action": "(509) 2 45 5174/4221",
+    "action": "509 2 45 5174",
  },
   {
     "name": "Honduras",
@@ -317,27 +317,27 @@ export const numbers = [
   {
     "name": "Hungary",
     "number": "(36) 80 20 55 20",
-    "action": "(36) 80 20 55 20",
+    "action": "36 80 20 55 20",
  },
   {
     "name": "Iceland",
     "number": "(00 354) 5611205",
-    "action": "(00 354) 5611205",
+    "action": "00 354 5611205",
  },
   {
     "name": "India",
     "number": "1091 / 1291",
-    "action": "1091 / 1291",
+    "action": "1091",
  },
   {
     "name": "Indonesia",
     "number": "(0274) 553333",
-    "action": "(0274) 553333",
+    "action": "0274 553333",
  },
   {
     "name": "Iran",
     "number": "07862 733511/0808 2000 247",
-    "action": "07862 733511/0808 2000 247",
+    "action": "07862 733511",
  },
   {
     "name": "Iraq",
@@ -392,7 +392,7 @@ export const numbers = [
   {
     "name": "Laos",
     "number": "856 21 214 30 1/2",
-    "action": "856 21 214 30 1/2",
+    "action": "856 21 214 30 1",
  },
   {
     "name": "Latvia",
@@ -432,17 +432,17 @@ export const numbers = [
   {
     "name": "Macedonia",
     "number": "070 141 700/075 141 700",
-    "action": "070 141 700/075 141 700",
+    "action": "070 141 700",
  },
   {
     "name": "Malawi",
     "number": "(265) 835 745 / 751 657",
-    "action": "(265) 835 745 / 751 657",
+    "action": "265 835 745",
  },
   {
     "name": "Malaysia",
-    "number": " (60) 03 7960 3030 / 7956 3488",
-    "action": " (60) 03 7960 3030 / 7956 3488",
+    "number": "(60) 03 7960 3030 / 7956 3488",
+    "action": "60 03 7960 3030",
  },
   {
     "name": "Maldives",
@@ -462,7 +462,7 @@ export const numbers = [
   {
     "name": "Marshall Islands",
     "number": "(692) 625 4296",
-    "action": "(692) 625 4296",
+    "action": "692 625 4296",
  },
   {
     "name": "Mauritius",
@@ -482,7 +482,7 @@ export const numbers = [
   {
     "name": "Micronesia",
     "number": "(691) 300 8396 / 330 5263",
-    "action": "(691) 300 8396 / 330 5263",
+    "action": "691 300 8396",
  },
   {
     "name": "Moldova",
@@ -502,12 +502,12 @@ export const numbers = [
   {
     "name": "Montenegro",
     "number": "(382) 40213086 / 68024086",
-    "action": "(382) 40213086 / 68024086",
+    "action": "382 40213086",
  },
   {
     "name": "Morocco",
     "number": "(212) 2 82 64 00/01",
-    "action": "(212) 2 82 64 00/01",
+    "action": "212 2 82 64 00",
  },
   {
     "name": "Mozambique",
@@ -517,17 +517,17 @@ export const numbers = [
   {
     "name": "Namibia",
     "number": "(081) 127 1002/3",
-    "action": "(081) 127 1002/3",
+    "action": "081 127 1002",
  },
   {
     "name": "Nauru",
     "number": "(674) (444) 3883/3881",
-    "action": "(674) (444) 3883/3881",
+    "action": "674 444 3883",
  },
   {
     "name": "Nepal",
     "number": "543 111/527 334",
-    "action": "543 111/527 334",
+    "action": "543 111",
  },
   {
     "name": "Netherlands",
@@ -552,12 +552,12 @@ export const numbers = [
   {
     "name": "Niger",
     "number": "(227) 74 12 55",
-    "action": "(227) 74 12 55",
+    "action": "227 74 12 55",
  },
   {
     "name": "Nigeria",
     "number": "(234) 0704 761 828/845",
-    "action": "(234) 0704 761 828/845",
+    "action": "234 0704 761 828",
  },
   {
     "name": "Northern Ireland",
@@ -577,12 +577,12 @@ export const numbers = [
   {
     "name": "Palau",
     "number": "(680) 767 2452",
-    "action": "(680) 767 2452",
+    "action": "680 767 2452",
  },
   {
     "name": "Palestine",
     "number": "(970) 2 295 614 6/7/8",
-    "action": "(970) 2 295 614 6/7/8",
+    "action": "970 2 295 614 6",
  },
   {
     "name": "Panamá",
@@ -607,7 +607,7 @@ export const numbers = [
   {
     "name": "Philippines",
     "number": "(63) (2) 926 7744",
-    "action": "(63) (2) 926 7744",
+    "action": "63 2 926 7744",
  },
   {
     "name": "Poland",
@@ -632,7 +632,7 @@ export const numbers = [
   {
     "name": "Romania",
     "number": "(40) 264 598155",
-    "action": "(40) 264 598155",
+    "action": "40 264 598155",
  },
   {
     "name": "Russian Federation",
@@ -642,12 +642,12 @@ export const numbers = [
   {
     "name": "Rwanda",
     "number": "3512/ 3945",
-    "action": "3512/ 3945",
+    "action": "3512",
  },
   {
     "name": "Saint Kitts & Nevis",
     "number": "(869) 469 1887",
-    "action": "(869) 469 1887",
+    "action": "869 469 1887",
  },
   {
     "name": "Saint Lucia",
@@ -657,12 +657,12 @@ export const numbers = [
   {
     "name": "Saint Vincent & Grenadines",
     "number": "(784) 456 2161",
-    "action": "(784) 456 2161",
+    "action": "784 456 2161",
  },
   {
     "name": "Samoa",
     "number": "(685) 22640",
-    "action": "(685) 22640",
+    "action": "685 22640",
  },
   {
     "name": "San Marino",
@@ -682,7 +682,7 @@ export const numbers = [
   {
     "name": "Senegal",
     "number": "(221) 33 941 44 11",
-    "action": "(221) 33 941 44 11",
+    "action": "221 33 941 44 11",
  },
   {
     "name": "Serbia",
@@ -717,12 +717,12 @@ export const numbers = [
   {
     "name": "Solomon Islands",
     "number": "(677) 26999",
-    "action": "(677) 26999",
+    "action": "677 26999",
  },
   {
     "name": "Somalia",
     "number": "(252) 90768248",
-    "action": "(252) 90768248",
+    "action": "252 90768248",
  },
   {
     "name": "South Africa",
@@ -737,7 +737,7 @@ export const numbers = [
   {
     "name": "Sri Lanka",
     "number": "(94 11) 4 718585",
-    "action": "(94 11) 4 718585",
+    "action": "94 11 4 718585",
  },
   {
     "name": "Sudan",
@@ -747,7 +747,7 @@ export const numbers = [
   {
     "name": "Suriname",
     "number": "47 0380/8268",
-    "action": "47 0380/8268",
+    "action": "47 0380",
  },
   {
     "name": "Swaziland",
@@ -792,12 +792,12 @@ export const numbers = [
   {
     "name": "Tibet",
     "number": "(91) 1892 221 527/198",
-    "action": "(91) 1892 221 527/198",
+    "action": "91 1892 221 527",
  },
   {
     "name": "Timor–Leste",
     "number": "670 (390) 321534",
-    "action": "670 (390) 321534",
+    "action": "670 390 321534",
  },
   {
     "name": "Tonga",
@@ -812,32 +812,32 @@ export const numbers = [
   {
     "name": "Tunisia",
     "number": "(216) 71890011/22953782",
-    "action": "(216) 71890011/22953782",
+    "action": "216 71890011",
  },
   {
     "name": "Turkey",
     "number": "155/156/183",
-    "action": "155/156/183",
+    "action": "155",
  },
   {
     "name": "Turkmenistan",
     "number": "(993)12445469/3915",
-    "action": "(993)12445469/3915",
+    "action": "99312445469",
  },
   {
     "name": "Turks and Caicos",
     "number": "(649) 946 2801",
-    "action": "(649) 946 2801",
+    "action": "649 946 2801",
  },
   {
     "name": "Tuvalu",
     "number": "(688) 20411",
-    "action": "(688) 20411",
+    "action": "688 20411",
  },
   {
     "name": "Uganda",
     "number": "256 (0) 753 781 122",
-    "action": "256 (0) 753 781 122",
+    "action": "256 0 753 781 122",
  },
   {
     "name": "Ukraine",
@@ -877,7 +877,7 @@ export const numbers = [
   {
     "name": "Viet Nam",
     "number": "(971) 34 36/31 43",
-    "action": "(971) 34 36/31 43",
+    "action": "971 34 36",
  },
   {
     "name": "Wales",
@@ -892,11 +892,11 @@ export const numbers = [
   {
     "name": "Zambia",
     "number": "(260) 1 25 52 04",
-    "action": "(260) 1 25 52 04",
+    "action": "260 1 25 52 04",
  },
   {
     "name": "Zimbabwe",
     "number": "(0)772 1000 49/502/601",
-    "action": "(0)772 1000 49/502/601",
+    "action": "0772 1000 49",
  },
 ]
