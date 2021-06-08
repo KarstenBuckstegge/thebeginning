@@ -102,18 +102,94 @@ body {
   }
 }
 
-// .footer {
-//   width: 100vw;
-//   padding: $base*3 $base*4;
-//   font-size: 16px;
-//   text-align: center;
-//   color: $primaryLight;
-// }
+.footer {
+  width: 100vw;
+  padding: $base*3 $base*4;
+  text-align: center;
 
-// .footer__logo {
-//   width: 160px;
-//   margin-top: $base * 3;
-// }
+  &, & a {
+    font-size: 16px;
+    color: $primaryLight;
+  }
+
+  a {
+    transition: color $transition;
+
+    &:hover, &:focus {
+      color: white;
+    }
+  }
+}
+
+.about {
+  display: block;
+  margin-bottom: $base * 4;
+  padding: $base;
+  color: inherit;
+  font-family: inherit;
+  font-size: 22px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+
+  transition: color $transition;
+
+    &:hover, &:focus {
+      color: white;
+    }
+}
+
+.about__overlay {
+  position: fixed;
+  top: $base * 2;
+  right: $base * 2;
+  bottom: $base * 2;
+  left: $base * 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $base * 2;
+  align-items: center;
+  background: white;
+  color: $primary;
+  z-index: 1000;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $transition;
+}
+
+.about__checkbox {
+  position: absolute;
+  display: none;
+
+  &:checked {
+    & + .about__overlay {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
+
+.about__text {
+  max-width: 750px;
+}
+
+.about__close {
+  position: absolute;
+  top: $base * 3;
+  right: $base * 3;
+  width: $base * 4;
+  height: $base * 4;
+  cursor: pointer;
+}
+
+.about__close__icon {
+  width: 100%;
+  height: 100%;
+}
 
 .exit {
   display: flex;
