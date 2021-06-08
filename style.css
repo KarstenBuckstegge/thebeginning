@@ -69,6 +69,7 @@ body {
 
 .exit {
   display: flex;
+  align-items: center;
   position: fixed;
   top: 15vh;
   right: 0;
@@ -88,17 +89,13 @@ body {
     .exit {
       top: 5vh;
       height: 56px;
-      padding: 16px 8px 16px 24px;
+      padding: 16px 16px 16px 24px;
       transform: translate(0);
       opacity: .8; } }
 
 .exit__icon {
   width: 24px;
   margin-right: 16px; }
-
-@media (max-width: 900px) {
-  .exit__text {
-    display: none; } }
 
 .search {
   margin-top: 64px;

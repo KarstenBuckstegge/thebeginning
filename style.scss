@@ -117,6 +117,7 @@ body {
 
 .exit {
   display: flex;
+  align-items: center;
   position: fixed;
   top: 15vh;
   right: 0;
@@ -138,7 +139,7 @@ body {
   @include media-sm {
     top: 5vh;
     height: $exitIconWidth + $base*4;
-    padding: $base*2 $base*1 $base*2 $base*3;
+    padding: $base*2 $base*2 $base*2 $base*3;
     transform: translate(0);
     opacity: .8;
   }
@@ -147,12 +148,6 @@ body {
 .exit__icon {
   width: $exitIconWidth;
   margin-right: $exitIconMargin;
-}
-
-.exit__text {
-  @include media-sm {
-    display: none;
-  }
 }
 
 
