@@ -2,9 +2,19 @@
 $primary: #87c1e2;
 $primaryLight: #c3e9ff;
 $red: #f37171;
+
+$fontsizeSmall: 16px;
+$fontsizeBase: 22px;
+$fontsizeBig: 26px;
+
+$fontsizeBase--mobile: 18px;
+$fontsizeBig--mobile: 22px;
+
 $base: 8px;
 $searchBorder: 2px solid $primaryLight;
+
 $transition: .3s ease;
+
 $exitIconWidth: $base * 3;
 $exitIconMargin: $base * 2;
 
@@ -35,7 +45,7 @@ body {
 body {
   font-family: aktiv-grotesk, sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: $fontsizeBase;
   font-style: normal;
 
   display: flex;
@@ -44,18 +54,18 @@ body {
   background: $primary;
 
   @include media-sm {
-    font-size: 18px;
+    font-size: $fontsizeBase--mobile;
   }
 }
 
 .h1 {
   margin-bottom: $base;
   font-weight: 800;
-  font-size: 26px;
+  font-size: $fontsizeBig;
   color: white;
 
   @include media-sm {
-    font-size: 22px;
+    font-size: $fontsizeBig--mobile;
   }
 }
 
@@ -108,7 +118,7 @@ body {
   text-align: center;
 
   &, & a {
-    font-size: 16px;
+    font-size: $fontsizeSmall;
     color: $primaryLight;
   }
 
@@ -121,13 +131,18 @@ body {
   }
 }
 
+.footer__text,
+.footer__link {
+  display: inline-block;
+}
+
 .about {
   display: block;
   margin-bottom: $base * 4;
   padding: $base;
   color: inherit;
   font-family: inherit;
-  font-size: 22px;
+  font-size: $fontsizeBase;
   text-transform: uppercase;
   border: none;
   outline: none;
@@ -147,18 +162,33 @@ body {
   right: $base * 2;
   bottom: $base * 2;
   left: $base * 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: $base * 2;
-  align-items: center;
   background: white;
   color: $primary;
   z-index: 1000;
-
+  overflow: hidden;
+  
   opacity: 0;
   pointer-events: none;
   transition: opacity $transition;
+  
+  @include media-sm {
+    padding-top: $base * 5;
+  }
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  @include media-sm {
+    display: block;
+  }
 }
 
 .about__checkbox {
@@ -173,8 +203,24 @@ body {
   }
 }
 
+.about__headline {
+  font-size: $fontsizeBig;
+  margin-bottom: $base * 2;
+
+  @include media-sm {
+    text-align: left;
+    font-size: $fontsizeBig--mobile;
+  }
+}
+
 .about__text {
+  text-transform: none;
   max-width: 750px;
+  line-height: 1.5;
+
+  @include media-sm {
+    text-align: left;
+  }
 }
 
 .about__close {
@@ -184,6 +230,13 @@ body {
   width: $base * 4;
   height: $base * 4;
   cursor: pointer;
+
+  @include media-sm {
+    top: $base * 2;
+    right: $base * 2;
+    width: $base * 3;
+    height: $base * 3;
+  }
 }
 
 .about__close__icon {
@@ -283,11 +336,11 @@ $searchIconWidth--mobile: $base * 3;
 
   width: 100%;
   font-family: inherit;
-  font-size: 26px;
+  font-size: $fontsizeBig;
   color: white;
 
   @include media-sm {
-    font-size: 22px;
+    font-size: $fontsizeBig--mobile;
   }
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -356,7 +409,7 @@ $searchIconWidth--mobile: $base * 3;
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 26px;
+  font-size: $fontsizeBig;
 
   transition: color $transition, background $transition;
 
@@ -368,10 +421,27 @@ $searchIconWidth--mobile: $base * 3;
 
   @include media-sm {
     border-width: 2px;
-    font-size: 18px;
+    font-size: $fontsizeBig--mobile;
   }
 }
 
 .hidden {
   display: none;
+}
+
+// LEGAL PAGE
+.legal {
+  max-width: 750px;
+  padding: $base*4;
+  font-size: 16px;
+
+  * + * {
+    margin-top: $base * 2;
+  }
+}
+
+.legal__back {
+  margin: $base*3 auto;
+  font-size: 16px;
+  color: white;
 }
