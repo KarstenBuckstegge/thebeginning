@@ -22,7 +22,7 @@ const createItem = (item, parent) => {
   
   const number = document.createElement('span');
   number.setAttribute('class', 'autoComplete_result__number');
-  number.innerHTML = item.value.number;
+  number.innerHTML = `${item.value.number} *`;
 
   parent.appendChild(country);
   parent.appendChild(number);
