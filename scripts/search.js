@@ -51,7 +51,7 @@ const config = {
     const selectedValue = feedback.selection.value;
 
     inputField.value = selectedValue.name;
-    actionLink.innerHTML = `CALL<br />${selectedValue.name}: ${selectedValue.action}`;
+    actionLink.innerHTML = `CALL<br />${selectedValue.name}: ${selectedValue.action} *`;
     actionLink.setAttribute('href', `tel:${selectedValue.action}`);
     actionLink.setAttribute('class', 'action');
   },
